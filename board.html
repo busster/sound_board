@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sound Board</title>
+    <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js" integrity="sha256-eGE6blurk5sHj+rmkfsGYeKyZx3M4bG+ZlFyA7Kns7E=" crossorigin="anonymous"></script>
+
+  </head>
+  <body>
+
+    <audio id="aAudio">
+      <source src="sound_board/aNote.m4a" type="audio/mpeg">
+    </audio>
+    <audio id="bAudio">
+      <source src="sound_board/bNote.m4a" type="audio/mpeg">
+    </audio>
+    <audio id="cAudio">
+      <source src="sound_board/cNote.m4a" type="audio/mpeg">
+    </audio>
+    <audio id="dAudio">
+      <source src="sound_board/dNote.m4a" type="audio/mpeg">
+    </audio>
+    <audio id="eAudio">
+      <source src="sound_board/eNote.m4a" type="audio/mpeg">
+    </audio>
+    <audio id="fAudio">
+      <source src="sound_board/fNote.m4a" type="audio/mpeg">
+    </audio>
+    <audio id="gAudio">
+      <source src="sound_board/gNote.m4a" type="audio/mpeg">
+    </audio>
+
+    <div class="modal">
+      <button class="escape">X</button>
+      <p>Click on the notes on the right to create a sound box. You can drag these sound boxes around, and resize them from the corners. Mousing over the boxes will play a note. Arrange the boxes into a fun pattern so that you can strum over them to play music! If you don't need a sound anymore just drag it to the bottom to erase it.</p>
+    </div>
+
+
+    <div class="tools">
+      <div id="button-list">
+        <button id="a" class="buttons">A</button>
+        <button id="b" class="buttons">B</button>
+        <button id="c" class="buttons">C</button>
+        <button id="d" class="buttons">D</button>
+        <button id="e" class="buttons">E</button>
+        <button id="f" class="buttons">F</button>
+        <button id="g" class="buttons">G</button>
+        <button id="info" class="buttons">Info</button>
+      </div>
+    </div>
+
+    <div id="instrument">
+<!--       <div id="a" class="box"></div>
+      <div id="b" class="box"></div>
+      <div id="c" class="box"></div>
+      <div id="d" class="box"></div>
+      <div id="e" class="box"></div>
+      <div id="f" class="box"></div>
+      <div id="g" class="box"></div> -->
+    </div>
+
+    <div class="trash"><p>Drag center of soundbox in to delete.</p></div>
+
+
+
+
+
+    <script type="text/javascript" src="application.js" ></script>
+  </body>
+</html>
